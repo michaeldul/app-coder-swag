@@ -24,22 +24,22 @@
                                 <color key="textColor" red="0.35841979577424249" green="0.37367147842639592" blue="0.36197180495541487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uri-hI-bf0">
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uri-hI-bf0">
                                 <rect key="frame" x="0.0" y="65" width="375" height="538"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="136" id="REj-bl-ZgN" customClass="CategoryCell" customModule="app_coder_swag" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="136"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="150" id="REj-bl-ZgN" customClass="CategoryCell" customModule="app_coder_swag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="REj-bl-ZgN" id="1Ak-os-3Kw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="135.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="jDl-0M-WhM">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="135.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="144"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yd-qf-RBL">
-                                                    <rect key="frame" x="127.5" y="53" width="120" height="30"/>
+                                                    <rect key="frame" x="127.5" y="60" width="120" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="95N-zS-33F"/>
                                                         <constraint firstAttribute="width" constant="120" id="ppJ-NV-meY"/>
@@ -50,11 +50,11 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="jDl-0M-WhM" secondAttribute="bottom" id="49z-G0-iF1"/>
                                                 <constraint firstItem="5yd-qf-RBL" firstAttribute="centerY" secondItem="1Ak-os-3Kw" secondAttribute="centerY" id="9fO-pH-QEB"/>
                                                 <constraint firstItem="jDl-0M-WhM" firstAttribute="leading" secondItem="1Ak-os-3Kw" secondAttribute="leading" id="ABm-3A-Lxl"/>
-                                                <constraint firstItem="jDl-0M-WhM" firstAttribute="top" secondItem="1Ak-os-3Kw" secondAttribute="top" id="ENO-Wz-Soj"/>
+                                                <constraint firstItem="jDl-0M-WhM" firstAttribute="top" secondItem="1Ak-os-3Kw" secondAttribute="top" constant="3" id="ft2-ec-vkO"/>
                                                 <constraint firstItem="5yd-qf-RBL" firstAttribute="centerX" secondItem="1Ak-os-3Kw" secondAttribute="centerX" id="lF1-aV-Bek"/>
+                                                <constraint firstAttribute="bottom" secondItem="jDl-0M-WhM" secondAttribute="bottom" constant="3" id="mTZ-Yi-OSm"/>
                                                 <constraint firstAttribute="trailing" secondItem="jDl-0M-WhM" secondAttribute="trailing" id="nOm-fW-42I"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -79,7 +79,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="CODER SWAG" id="cRQ-ju-vSe"/>
                     <connections>
-                        <outlet property="categoryTable" destination="Uri-hI-bf0" id="6qu-oW-Vbz"/>
+                        <outlet property="categoryTable" destination="Uri-hI-bf0" id="gYc-hu-68r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
